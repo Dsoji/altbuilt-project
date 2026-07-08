@@ -2,8 +2,6 @@ import { useEffect } from 'react'
 import { Briefcase, BellRing } from 'lucide-react'
 import { Container } from '../components/ui/Container'
 import { IconBadge } from '../components/ui/IconBadge'
-import { Button } from '../components/ui/Button'
-import { contact } from '../data/contact'
 
 export function Careers() {
   useEffect(() => {
@@ -12,10 +10,6 @@ export function Careers() {
       document.title = 'AltBuilt Projects — Building the Future Faster'
     }
   }, [])
-
-  const cvMailto = `mailto:${contact.email}?subject=${encodeURIComponent(
-    'Career Opportunity — CV Submission',
-  )}`
 
   return (
     <>
