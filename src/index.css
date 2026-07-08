@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+/* ------------------------------------------------------------------ *
+ * Design tokens — single source of truth for the whole site.
+ * Exposed as Tailwind utilities: bg-ink, text-gold, font-display, …
+ * ------------------------------------------------------------------ */
+@theme {
+  /* Brand palette */
+  --color-ink: #0d0f12; /* near-black — bars, hero overlay, stats */
+  --color-ink-800: #16191e; /* raised dark surfaces (cards on dark) */
+  --color-ink-700: #22262d; /* dividers / borders on dark */
+  --color-surface: #ffffff; /* white sections */
+  --color-muted: #f4f5f7; /* light-gray band (WhyChoose) */
+  --color-gold: #c69749; /* accent */
+  --color-gold-600: #b3843a; /* accent hover */
+
+  /* Typography */
+  --font-display: 'Sora', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    background: var(--color-surface);
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}

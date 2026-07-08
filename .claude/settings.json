@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c \"import fitz; print\\('pymupdf available'\\)\")",
+      "Bash(brew --prefix)",
+      "Bash(brew install *)",
+      "Bash(pdftotext -layout \"/Users/snow/Downloads/AltBuilt_Company Profile \\(1\\).pdf\" profile.txt)",
+      "Bash(pdftoppm -png -r 110 \"/Users/snow/Downloads/AltBuilt_Company Profile \\(1\\).pdf\" page)",
+      "Bash(npx oxlint *)",
+      "Bash(npm run *)",
+      "Bash(curl -s http://localhost:4173)",
+      "Bash(pkill -f \"vite preview\")",
+      "Bash(npm install *)",
+      "Bash(npx playwright *)",
+      "Bash(curl -s -o /dev/null -w \"preview:%{http_code}\\\\n\" http://localhost:4173/)",
+      "Bash(node /private/tmp/claude-501/-Users-snow-Documents-web-projects-altbuilt/4b0da896-28e8-4975-b0ce-712b988a88f5/scratchpad/shot.mjs)",
+      "Bash(node _shot.mjs)",
+      "Bash(npm uninstall *)",
+      "Bash(sips -s format jpeg -s formatOptions 82 -Z 1600 \"modular_image a.png\" --out modular.jpg)",
+      "Bash(sips -s format jpeg -s formatOptions 82 -Z 1600 \"top_service_image a.png\" --out steel.jpg)",
+      "Bash(sips -s format jpeg -s formatOptions 82 -Z 1600 \"warehouse a.png\" --out warehouse.jpg)",
+      "Bash(sips -s format jpeg -s formatOptions 82 -Z 1600 \"port_image a.png\" --out container-port.jpg)",
+      "Bash(sips -s format jpeg -s formatOptions 80 -Z 1000 \"corevalues_construction a.png\" --out workers-steel.jpg)",
+      "Bash(awk '{printf \"%8.0fKB  %s\\\\n\", $5/1024, $9}')",
+      "Bash(pdfimages -list \"/Users/snow/Downloads/AltBuilt_Company Profile \\(1\\).pdf\")",
+      "Bash(pdfimages -png -f 1 -l 1 \"/Users/snow/Downloads/AltBuilt_Company Profile \\(1\\).pdf\" logo/p1)",
+      "Bash(pdfimages -png -f 14 -l 14 \"/Users/snow/Downloads/AltBuilt_Company Profile \\(1\\).pdf\" logo/p14)",
+      "Bash(awk '{print $5\"  \"$9}')",
+      "Bash(awk '{print \"header:\",$5}')",
+      "Bash(xargs -n1 basename)"
+    ]
+  }
+}
